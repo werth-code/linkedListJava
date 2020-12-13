@@ -10,8 +10,8 @@ public class Main {
         werthList = WerthList.insert(werthList, 2);
         werthList = WerthList.insert(werthList, 3);
 
-        WerthList.deleteNode(werthList, 2);
-
+        WerthList.countNodes(werthList.head);
         WerthList.printWerthList(werthList);
+
     }
 }

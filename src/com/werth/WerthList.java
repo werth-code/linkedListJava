@@ -43,6 +43,20 @@ public class WerthList {
         return list;
     }
 
+    public static Integer countNodes(Node head) {
+        if(head == null) return null;
+
+        Node currentNode = head;
+        Integer count = 1;
+
+        while(currentNode.nextNode != null) {
+            currentNode = currentNode.nextNode;
+            count++;
+        }
+        System.out.println("Length: " + count);
+        return count;
+    }
+
     public static void printWerthList(WerthList list) {
         Node currentNode = list.head;
         while(currentNode != null) {
